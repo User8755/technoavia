@@ -17,6 +17,13 @@
   width: 150px;
   margin: 10px auto 0;
   text-align: center;
+  border: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 3px;
+}
+
+.input:focus {
+  outline: none;
 }
 
 .block {
