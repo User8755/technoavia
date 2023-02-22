@@ -22,15 +22,27 @@
   padding-bottom: 3px;
 }
 
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type=number] {
+  -moz-appearance:textfield;
+}
+
 .input:focus {
   outline: none;
 }
 
 .block {
-  width: 161px;
+  width: 72px;
   display: flex;
+  flex-direction: column;
   margin: 10px auto;
-  align-items: baseline;
+  align-items: center;
+  row-gap: 10px;
 }
 
 .block__title {
@@ -38,7 +50,17 @@
 }
 
 .block__paragraf {
-  margin: 0 0 0 5px;
+  margin: 0;
   border-bottom: 1px solid black;
   padding-bottom: 3px;
+}
+
+.block__paragraf_type-place {
+  text-align: center;
+}
+
+.header__time {
+  width: 100px;
+  margin: 15px auto;
+  text-align: center;
 }
