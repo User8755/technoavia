@@ -4,8 +4,7 @@
 @import url(./inter.css);
 
 .form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin: 10px auto;
   max-width: 200px;
   border: 1px solid red;
