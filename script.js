@@ -41,16 +41,20 @@ const findArt = (list) => {
   const arr = [];
   const findObj = list.filter((item) => item.art === input.value);
   findObj.forEach((item) => {
-    arr.push(` ${item.place}`);
+    arr.push(item.place);
   });
+
+
+
   return arr;
 };
 
 const pre = (item) => {
-  console.log(item);
-  //if (typeof item == "object") {
   if (item.length > 0) {
-    place.textContent = item;
+    const arrr = item.join('\n')
+    console.log(arrr)
+    const arrrr = arrr.split(', <br>')
+    place.textContent = arrrr
   } else {
     place.textContent = "Неверный артикул";
   }
