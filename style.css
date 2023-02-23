@@ -15,7 +15,8 @@
   width: 100px;
   margin: 10px auto 5px;
   padding: 0;
-  text-align: center;
+  text-align:-moz-center;
+  text-align:-webkit-center;
 }
 
 .input {
