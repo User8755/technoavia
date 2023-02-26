@@ -17,47 +17,42 @@ const minutes = () => {
 };
 
 const setTimes = () => {
-  const time = new Date();
-  const min = time.getMinutes();
+  const data = new Date();
+  const min = data.getMinutes();
+  const hours = data.getHours()
 
-  const minutes = () => {
-    if (`${min}`.length > 1) {
-      return min;
-    } else {
-      return "0" + min;
-    }
-  };
+  const time = (item) => {
+   return `0${item}`.slice(-2)
+   }
 
-  times.textContent = `${time.getHours()} : ${minutes()}`;
+  times.textContent = `${time(hours)} : ${time(min)}`;
 };
 
-setInterval(() => setTimes());
+setInterval(() => setTimes(), 1000);
 
 const formSubmit = (evt) => {
   evt.preventDefault();
 };
 
 const findArt = (list) => {
-  const arr = [];
+  const foundArt = [];
   const findObj = list.filter((item) => item.art === input.value);
   findObj.forEach((item) => {
-    arr.push(item.place);
+    foundArt.push(item.place);
   });
 
-
-
-  return arr;
+  return foundArt;
 };
 
 const pre = (item) => {
   if (item.length > 0) {
-    const arrr = item.join('\n')
-    console.log(arrr)
-    const arrrr = arrr.split(', <br>')
-    place.textContent = arrrr
+    const arrr = item.join("\n");
+    console.log(arrr);
+    const arrrr = arrr.split(", <br>");
+    place.textContent = arrrr;
   } else {
     article.textContent = "Неверный артикул";
-    place.textContent = ''
+    place.textContent = "";
   }
 };
 
