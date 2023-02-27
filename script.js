@@ -51,8 +51,7 @@ const pre = (item) => {
     const arrrr = arrr.split(", <br>");
     place.textContent = arrrr;
   } else {
-    article.textContent = "Неверный артикул";
-    place.textContent = "";
+    place.textContent = "Место не задано";
   }
 };
 
