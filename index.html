@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Поиск по стелажу</title>
-  <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/normalize.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="body">
-  <header class="header">
-    <div class="header__time">00 : 00</div>
-  </header>
-  <form class="form">
-    <input type="number" class="input" placeholder="Введите артикул">
-    <button class="button" type="submit">Отправить</button>
-  </form>
-  <div class="block">
-    <h2 class="block__title">Артикул:</h2>
-    <p class="block__paragraf block__paragraf_type-article">@@@@</p>
-  </div>
-  <div class="block block_place">
-    <h2 class="block__title">Стелаж:</h2>
-    <p class="block__paragraf block__paragraf_type-place">@@@@</p>
-  </div>
-  <template class="temp">
-    <span class="span"></span>
-  </template>
-  <script src="./list.js"></script>
-  <script src="./script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Поиск по стелажу</title>
+    <link
+      rel="stylesheet"
+      href="https://code.s3.yandex.net/web-code/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <main class="main">
+      <header class="header">
+        <div class="header__time">00 : 00</div>
+      </header>
+      <form class="form">
+        <input type="number" class="input" placeholder="Введите артикул" />
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <div class="block">
+        <h2 class="block__title">Артикул:</h2>
+        <p class="block__paragraf block__paragraf_type-article">@@@@</p>
+      </div>
+      <div class="block block_place">
+        <h2 class="block__title">Стелаж:</h2>
+        <p class="block__paragraf block__paragraf_type-place">@@@@</p>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="block__paragraf">Автор: Евгений Калинин</p>
+    </footer>
+    <template class="temp">
+      <span class="span"></span>
+    </template>
+    <script src="./list.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
