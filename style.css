@@ -21,7 +21,7 @@
   background-color: bisque;
 }
 
-.button:hover {
+.button:active {
   opacity: .5;
 }
 
@@ -61,14 +61,14 @@
   margin: 0;
 }
 
-.block__paragraf {
+.block__span {
   margin: 0;
   border-bottom: 1px solid black;
   padding-bottom: 3px;
   text-align: center;
 }
 
-.block__paragraf_type-place {
+.block__span_type-place {
   width: 85px;
   border: none;
   white-space: break-spaces;
